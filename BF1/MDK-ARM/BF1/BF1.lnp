@@ -1,0 +1,27 @@
+--cpu Cortex-M4.fp
+"bf1\startup_stm32f407xx.o"
+"bf1\main.o"
+"bf1\gpio.o"
+"bf1\sys.o"
+"bf1\stm32f4xx_it.o"
+"bf1\stm32f4xx_hal_msp.o"
+"bf1\stm32f4xx_hal_tim.o"
+"bf1\stm32f4xx_hal_tim_ex.o"
+"bf1\stm32f4xx_hal_rcc.o"
+"bf1\stm32f4xx_hal_rcc_ex.o"
+"bf1\stm32f4xx_hal_flash.o"
+"bf1\stm32f4xx_hal_flash_ex.o"
+"bf1\stm32f4xx_hal_flash_ramfunc.o"
+"bf1\stm32f4xx_hal_gpio.o"
+"bf1\stm32f4xx_hal_dma_ex.o"
+"bf1\stm32f4xx_hal_dma.o"
+"bf1\stm32f4xx_hal_pwr.o"
+"bf1\stm32f4xx_hal_pwr_ex.o"
+"bf1\stm32f4xx_hal_cortex.o"
+"bf1\stm32f4xx_hal.o"
+"bf1\stm32f4xx_hal_exti.o"
+"bf1\system_stm32f4xx.o"
+--library_type=microlib --strict --scatter "BF1\BF1.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "BF1.map" -o BF1\BF1.axf
